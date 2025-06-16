@@ -1,0 +1,146 @@
+@font-face {
+  font-family: 'MagdalenaBeric';
+  src: url('fontovi/MagdalenaBeric.ttf') format('truetype');
+}
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  min-height: 100vh;  
+  height: auto;
+  overflow: auto;
+
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://img.freepik.com/premium-photo/fantasy-brown-marble-texture-with-its-unique-blend-grey-brown-white-tones_1306307-3143.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: blur(3px) brightness(0.5);
+  z-index: -1;
+}
+
+h1 {
+  font-family: 'MagdalenaBeric', serif;
+  font-size: 90px;
+  font-weight: 900;
+  color: white;
+  text-align: center;
+  margin: 210px 100px 70px 100px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+h2 {
+  font-family: Georgia, serif;
+  font-size: 90px;
+  font-weight: 900;
+  color: white;
+  text-align: center;
+  margin: 200px 100px 70px 100px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+h3 {
+	font-family: Georgia, serif;
+	font-size: 25px;
+	text-align: center;
+	color: white;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+  
+p {
+  font-family: Georgia, serif;
+  font-size: 25px;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+nav {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.navigacija {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 0;
+}
+
+.navigacija li {
+  margin: 0 30px;
+}
+
+.navigacija a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: Georgia, serif;
+  transition: 0.3s;
+}
+
+.navigacija a:hover {
+  text-decoration: underline;
+  color: #ccc;
+}
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.slike-galerija {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.slike-galerija img {
+  width: 300px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease;
+}
+
+.slike-galerija img:hover {
+  transform: scale(1.05);
+}
+.vjezbe-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.lijeva-kolona img,
+.desna-kolona img {
+  width: 300px;
+  height: auto;
+  display: block;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+}
+.lijeva-kolona, .desna-kolona {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.video-container video {
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.4);
+}
