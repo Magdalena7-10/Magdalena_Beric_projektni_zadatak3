@@ -134,13 +134,7 @@ nav {
   flex-direction: column;
   align-items: center;
 }
-
 .video-container {
   text-align: center;
-  margin-top: 50px;
-}
-
-.video-container video {
-  border-radius: 12px;
-  box-shadow: 0 0 12px rgba(255, 255, 255, 0.4);
+  margin-top: 40px;
 }
